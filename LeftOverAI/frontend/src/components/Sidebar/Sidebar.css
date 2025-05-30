@@ -1,0 +1,139 @@
+.sidebar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.extended {
+    width: 250px;
+}
+
+.top {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: auto;
+}
+
+.menu {
+    width: 24px;
+    margin: 0 30px;
+    cursor: pointer;
+    filter: brightness(0.4);
+}
+
+.new-chat {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 8px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.new-chat:hover {
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.new-chat img {
+    width: 18px;
+    margin-right: 10px;
+    filter: brightness(0.4);
+}
+
+.new-chat p {
+    color: #1f2937;
+    font-size: 14px;
+}
+
+.recent,
+.conversations,
+.active-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.recent-title,
+.conversations-title,
+.active-chat-title {
+    color: rgba(31, 41, 55, 0.6);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 15px;
+}
+
+.recent-entry,
+.conversation-entry,
+.active-chat-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #1f2937;
+    transition: all 0.2s ease;
+}
+
+.recent-entry:hover,
+.conversation-entry:hover,
+.active-chat-entry:hover {
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.recent-entry img,
+.conversation-entry img,
+.active-chat-entry img,
+.bottom-item img {
+    width: 16px;
+    filter: brightness(0.4);
+}
+
+.recent-entry p,
+.conversation-entry p,
+.active-chat-entry p {
+    font-size: 14px;
+    color: rgba(31, 41, 55, 0.9);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.active-chat-entry {
+    background-color: rgba(99, 102, 241, 0.1);
+    border-left: 3px solid #6366f1;
+}
+
+.active-chat-title {
+    color: #6366f1;
+}
+
+.bottom {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom-item {
+    margin: 0 15px;
+} 
